@@ -1,5 +1,7 @@
 TODO: Add more to the title of your project here
 
+Maibritt Tornbjerg, reserach assistent 
+
 # LearningR:
 
 TODO: Give a brief description of what your project is about
