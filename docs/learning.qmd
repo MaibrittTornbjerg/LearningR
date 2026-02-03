@@ -1,0 +1,31 @@
+---
+title: "Reproducible_Document"
+author: "MaibrittTornbjerg"
+format: html
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+
+## Writing R code 
+
+2+2 
+
+```{r}
+2+2
+```
+## About me
+
+-   Maibritt Egeskov Tornbjerg
+-   Odense University Hospital
+
+I work as a **reserch assistent** at the *KMEB* lab 
+___
+
+## Simple code”
+
+```{r}
+3*3
+```
