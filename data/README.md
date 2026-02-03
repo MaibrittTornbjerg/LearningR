@@ -12,4 +12,4 @@ Results generated from any analyses that are part of the project
 should also be stored here as data files. Saving the results here
 has the advantage that you don't have to always re-run analyses and
 that they can be inspected by reviewers or other researchers to
-verify the findings.
+verify the findings..
