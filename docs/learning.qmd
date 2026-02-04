@@ -6,8 +6,9 @@ format: html
 
 ```{r setup}
 library(tidyverse)
-```
 
+post_meal_data <- read_csv2(here::here("data/post-meal-insulin.csv"))
+```
 
 ## Writing R code 
 
@@ -32,3 +33,16 @@ ___
 ## Testing for Git
 
 The wheather is sunny but windy
+
+## Importing data 
+ 
+importing data file "post-meal-insulin.csv" from a web page using the folowing line of code -> download.file(
+  url = "https://zenodo.org/records/4989220/files/Eliasson_data2.csv?download=1", destfile = here::here("data/post-meal-insulin.csv"))
+
+## Showing the data 
+```{r}
+post_meal_data
+
+glimpse(post_meal_data)
+```
+
