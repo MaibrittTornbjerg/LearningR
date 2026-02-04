@@ -4,6 +4,8 @@ Maibritt Tornbjerg, reserach assistent
 
 # LearningR:
 
+Hi, I'm Maibritt
+
 TODO: Give a brief description of what your project is about
 
 This project...
