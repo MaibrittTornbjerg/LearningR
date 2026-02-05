@@ -272,7 +272,7 @@ post_meal_data |>
     insulin_glucose_ratio = (auc_ins / auc_pg),
     insulin_insensitive = if_else(insulin_glucose_ratio > mean(insulin_glucose_ratio), "Insensitive", "Sensitive")
   ) |>
-  ggplot(aes(x = BMI, y = Bone.mineral.DXA)) +
+  ggplot(aes(x = BMI, y = Bone.mineral.DXA, colour = insulin_insensitive)) +
   geom_point() +
   geom_smooth() +
   facet_grid(cols = vars(insulin_insensitive))
@@ -290,6 +290,7 @@ post_meal_data |>
 # scale_fill_viridis_d(option = "magma")
 
 # Tasks 3. and 4.
+
 post_meal_data |>
   ggplot(aes(x = auc_pg, y = auc_ins, colour = BMI)) +
   geom_point() +
