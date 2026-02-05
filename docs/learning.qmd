@@ -222,3 +222,28 @@ post_meal_data |>
     percent_body_fat > 30
   )
 ```
+
+
+## Visualizing with a jitter plot
+```{r}
+tidied_post_meal_data |>
+  mutate(Overweight = if_else(BMI >= 25, "Overweight", "Not Overweight")) |>
+  ggplot(aes(x = Overweight, y = insulin_glucose_ration)) +
+  geom_jitter()
+```
+
+## Plotting three or more varibles
+
+kan ændre på faktorerne. De er default sat op alfabetisk, men dette kan ændres 
+```{r}
+tidied_post_meal_data |>
+  filter(BMI < 30) |>
+  mutate(young = if_else(Age < 40, "Young", "Old")) |>
+  ggplot(aes(x = BMI, y = insulin_glucose_ration, colour = Group)) +
+  geom_point() +
+  facet_grid(rows = vars(young)) +
+  labs(
+    x = "Body mass index (BMI)",
+    y = "Insulin to glucose ration"
+  )
+```
